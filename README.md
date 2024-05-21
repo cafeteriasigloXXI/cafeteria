@@ -256,3 +256,64 @@ Interconexión y VPN: Google Cloud proporciona opciones de interconexión direct
 ### SQL
 
 En Google Cloud, el servicio de SQL engloba varias soluciones de bases de datos gestionadas que permiten a los usuarios implementar, administrar y escalar bases de datos relacionales de manera fácil y eficiente en la nube.
+
+# VINCULACIÓN CON FIREBASE
+
+## Descripción
+
+En nuestro proyecto cafeteria XXI se utilizara Firebase para hosting y autenticación. Este documento describe los pasos tomados para configurar el hosting de Firebase y la autenticación con Firebase en el proyecto.
+
+## Prerrequisitos
+
+    -Tener instalado Node.js y npm.
+    -Tener instalado Composer.
+    -Tener una cuenta de Firebase.
+    -Tener un proyecto Laravel instalado y configurado.
+
+### Configuración del Proyecto Firebase
+
+Principalmente se realizo la creacion y configuración del proyecto en Firebase llamandose tambien Cafeteria XXI.
+
+Luego de eso configuramos el hosting verificando que los deploys que realizamos se carguen exitosamente.
+
+## Authentication
+
+Ya al tener nuestro proyecto en un hosting para poder tener todo controlado por versiones y tener nuestro proyecto en produccón, hacer pruebas, etc. Vamos a utilizar otro servicio que nos ofrece Firebase que es el tema de la Authentication.
+
+### Que es?
+
+Firebase Authentication es un servicio que proporciona la plataforma Firebase de Google, diseñado para facilitar la autenticación de usuarios en aplicaciones web y móviles. Ofrece múltiples métodos de autenticación, incluyendo autenticación con correo electrónico y contraseña, proveedores de identidad federada como Google, Facebook, Twitter, GitHub, y autenticación anónima.
+
+### Caracterisiticas
+
+1. Autenticación con Correo Electrónico y Contraseña:
+
+-   Permite a los usuarios registrarse e iniciar sesión con su dirección de correo electrónico y una contraseña.
+-   Proporciona flujos integrados para restablecimiento de contraseñas, verificación de correos electrónicos, y cambio de contraseñas.
+
+2. Proveedores de Identidad Federada:
+
+-   Facilita la autenticación a través de terceros como Google, Facebook, Twitter, GitHub, Apple, Microsoft, Yahoo, entre otros.
+-   Simplifica la integración de OAuth 2.0 para autenticarse con estos proveedores.
+
+3. Autenticación Telefónica:
+
+-   Permite a los usuarios iniciar sesión usando sus números de teléfono mediante un código de verificación enviado por SMS.
+
+4. Autenticación Anónima:
+
+-   Permite a los usuarios usar la aplicación sin necesidad de registrarse o iniciar sesión. Luego pueden actualizar a una cuenta completa sin perder los datos generados durante el uso anónimo.
+
+5. Gestión de Usuarios:
+
+-   Facilita la creación, eliminación y actualización de cuentas de usuario.
+-   Proporciona API para obtener la información del perfil del usuario, incluyendo nombres, direcciones de correo electrónico y fotos de perfil.
+
+6. Seguridad y Cumplimiento:
+
+-   implementa buenas prácticas de seguridad y almacenamiento seguro de credenciales.
+-   Compatible con múltiples estándares de autenticación y encriptación.
+
+## CONCLUSION
+
+Con esta configuración, el proyecto "Cafeteria XXI" está vinculado a Firebase Hosting y tiene un sistema de autenticación básico implementado con Firebase Authentication. Esta integración permite manejar la autenticación de usuarios de manera eficiente utilizando las capacidades de Firebase.
